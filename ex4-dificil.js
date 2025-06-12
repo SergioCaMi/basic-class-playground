@@ -1,28 +1,36 @@
-/**
- * Mi propia estructura de datos 
- */
-
-class LimitedSet {
+class LimitedArray {
     constructor(limit) {
-
+        this.element = [];
+        this.limit = limit;
     }
 
     add(elem) {
+        if (this.element.length < this.limit && !this.element.includes(elem)) {
+                    console.log('añadido: ', elem)
 
+            this.element.push(elem);
+        }
     }
 
     values() {
-
+        return this.element; 
     }
 
     size() {
-
+        return this.element.length;
     }
 
     removeElement(elem) {
-        
+        const index = this.element.indexOf(elem);
+        if (index !== -1) {
+            this.element.splice(index, 1);
+            console.log('eliminado: ', elem)
+        }
+                
+
     }
 }
+
 
 const l = new LimitedArray(3);
 console.log(l.size()); // 0

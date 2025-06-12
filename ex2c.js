@@ -6,11 +6,12 @@ class Coche {
   }
 
   acelerar() {
-    // Completar: resta 1 unidad de gasolina (si queda gasolina)
-  }
+    if (this.gasolina>0) this.gasolina-=1;
+    if (this.gasolina===0) console.log("No se puede acelerar más!!");
+    }
 
   repostar() {
-    // Completar: Vuelve a poner 5 unidades de gasolina al deposito
+    this.gasolina = 5;
   } 
 
 }

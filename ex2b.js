@@ -16,7 +16,7 @@ console.log(lista); // ["manzana", "pera"]
  */
 
 function removeDuplicates(arr) {
-    // Completar
+    return [...new Set(arr)];
 }
 
 // 🧪 Pruebas

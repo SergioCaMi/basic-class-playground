@@ -13,5 +13,6 @@ console.log(ahora); // Fecha y hora actual
  * EJERCICIO: Escribe el código necesario para instanciar un objeto de la clase Date y luego usa uno de sus métodos para que te muestre la siguiente fecha y en este formato:
  * Mon Jul 10 1995, que corresponde a la fecha en formato ISO del: lunes 10 de julio de 1995
  */
+const fechaPasada = new Date(1995, 6, 10); 
+console.log(fechaPasada.toDateString());
 
-// const fechaPasada = new Date(...);
