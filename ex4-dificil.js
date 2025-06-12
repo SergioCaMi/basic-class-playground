@@ -1,4 +1,5 @@
 class LimitedArray {
+    
     constructor(limit) {
         this.element = [];
         this.limit = limit;
